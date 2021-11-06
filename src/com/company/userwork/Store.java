@@ -25,7 +25,6 @@ public class Store {
                 return true;
             }
         } System.out.println("FALSE");
-        current.role = Position.DEFAULT;
         return false;
     }
 
@@ -36,7 +35,6 @@ public class Store {
             case MANAGER -> System.out.println("Менеджер магазина, может общаться с клиентами");
             case CLIENT -> System.out.println("Клиент магазина, может покупать товары и пользоваться дисконтом");
             case ANONYMOUS -> System.out.println("Анонимный пользователь, может покупать товары и\\или авторизоваться");
-            default -> System.out.println("Неверный логин и\\или пароль");
 
         }
     }

@@ -35,9 +35,15 @@ public class Main {
         System.out.print("Введите пароль: ");
         Scanner scn2 = new Scanner(System.in);
         String password = scn2.nextLine();
-        store.logIn(login, password);
-        store.getCurrentUserRights();
-        store.logOut();
+
+        if(store.logIn(login, password)){
+           store.getCurrentUserRights();
+           store.logOut();
+       } else{
+            System.out.println("Неверный логин и\\или пароль");
+        }
+
+
 
     }
 }

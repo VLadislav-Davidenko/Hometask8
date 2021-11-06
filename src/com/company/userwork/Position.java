@@ -5,7 +5,6 @@ public enum Position {
     ADMINISTRATOR("Администратор"),
     MANAGER("Менеджер"),
     CLIENT("Клиент"),
-    DEFAULT("Не вошёл"),
     ANONYMOUS("Аноним");
 
     private String pos;
