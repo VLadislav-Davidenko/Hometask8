@@ -22,26 +22,22 @@ public class Main {
 
         boolean b = true;
         while(b){
-        System.out.print("Введите логин: ");
-        Scanner scn1 = new Scanner(System.in);
-        String login = scn1.nextLine();
-        System.out.print("Введите пароль: ");
-        Scanner scn2 = new Scanner(System.in);
-        String password = scn2.nextLine();
-        str1.logIn(login, password);
-        str1.getCurrentUserRights();
-        str1.logOut();
+            tryLogin(str1);
         }
 
     }
 
-/*   public void tryLogin(String url){
+
+   public static void tryLogin(Store store){
         System.out.print("Введите логин: ");
         Scanner scn1 = new Scanner(System.in);
         String login = scn1.nextLine();
         System.out.print("Введите пароль: ");
         Scanner scn2 = new Scanner(System.in);
         String password = scn2.nextLine();
+        store.logIn(login, password);
+        store.getCurrentUserRights();
+        store.logOut();
 
-    }*/
+    }
 }
